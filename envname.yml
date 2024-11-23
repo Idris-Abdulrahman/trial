@@ -1,0 +1,4 @@
+name: Abdulrahman_genai
+channels:
+  - defaults
+prefix: /opt/anaconda3/envs/Abdulrahman_genai
