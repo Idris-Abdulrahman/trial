@@ -24,7 +24,10 @@ st.set_page_config(page_title="University and Course Recommender", layout="wide"
 st.title("University and Course Recommender")
 
 # Load the API Key securely
-OPENAI_API_KEY = yaml.safe_load(open('credentials.yml'))['openai']
+#OPENAI_API_KEY = yaml.safe_load(open('credentials.yml'))['openai']
+
+import os
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 # Set up memory
 import streamlit as st
